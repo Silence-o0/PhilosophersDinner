@@ -6,16 +6,15 @@
 
 using namespace std;
 
-const int countOfPhilosophers = 3;
+const int countOfPhilosophers = 5;
 random_device generator;
 uniform_int_distribution<int> intDistribution;
-mutex mtx[3];
-int forks[3] = {};
+mutex mtx[countOfPhilosophers];
+int forks[countOfPhilosophers] = {};
 
 class Philosophers {
   public:
     int id;
-
 
     void thinking() {
         int thinkingTime = intDistribution(generator) % 6 + 15;
