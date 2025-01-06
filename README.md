@@ -1,5 +1,5 @@
 ## Problem Overview
-A multithreaded simulation of the classic **Dining Philosophers Problem**, illustrating concurrency issues such as deadlock, resource contention, and starvation.
+A multithreaded simulation of the classic **[Dining Philosophers Problem](https://en.wikipedia.org/wiki/Dining_philosophers_problem)**, illustrating concurrency issues such as deadlock, resource contention, and starvation.
 The Dining Philosophers Problem involves five philosophers who alternate between thinking and eating. Each philosopher requires two forks to eat, but there are only five forks available. This creates a synchronization challenge to ensure:
 
 - Deadlock does not occur.
